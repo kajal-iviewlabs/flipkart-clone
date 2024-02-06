@@ -1,0 +1,169 @@
+.header__searchButton {
+  display: flex;
+  border: 0.8rem solid #f1f5fe;
+  width: auto;
+  border-radius: 0.8rem;
+  position: relative;
+  background-color: #f0f5ff;
+  padding-right: 15rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.header__searchButtonText {
+  display: flex;
+  margin-left: 1rem;
+  min-width: 20rem;
+  box-sizing: border-box;
+  font-size: 1.7rem;
+  width: 100%;
+  position: relative;
+  background-color: #f1f5fe;
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis for overflow */
+}
+
+.header {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 1.6rem;
+  font-family: "Roboto", sans-serif bold;
+  color: #666666;
+  font-size: "1.2rem";
+  pointer-events: auto;
+}
+
+.header a {
+  color: black;
+}
+
+.login__button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.login__icon {
+  margin-right: 0.8rem;
+}
+
+.login_container {
+  position: relative;
+  border: 0.1rem solid black;
+  padding: 0.5rem;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.H6-NpN._3N4_BX:hover .dropdown-content {
+  display: block;
+}
+
+.H6-NpN._3N4_BX:hover .XdYXbi {
+  transform: rotate(180deg);
+}
+
+._1TOQfO {
+  text-decoration: none;
+  color: #2874f0;
+  display: flex;
+  align-items: center;
+  margin-right: 1.6rem;
+}
+
+._1TOQfO img {
+  margin-right: 0.8rem;
+}
+
+/* for mobile devices */
+@media (max-width: 480px) {
+  .header__searchButton {
+    padding-right: 10rem;
+  }
+}
+
+/* for low resolution tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  .header__searchButton {
+    padding-right: 0.9rem;
+  }
+  .header__searchButtonText {
+    font-size: 0.7rem;
+    min-width: rem;
+  }
+  .icon {
+    width: 3rem;
+  }
+  .header {
+    padding: 0.5rem 0.1rem;
+  }
+  .loginText {
+    font-size: 0.6rem;
+  }
+  .login_container {
+    padding: 0.1rem;
+  }
+}
+
+/* for tablets & Ipads  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header__searchButton {
+    padding-right: 0.2rem;
+  }
+  .header__searchButtonText {
+    font-size: 0.9rem;
+    min-width: 10rem;
+  }
+  .icon {
+    width: 6rem;
+  }
+  .header {
+    padding: 0.7rem 0.3rem;
+  }
+  .loginText {
+    font-size: 0.6rem;
+  }
+  .login_container {
+    padding: 0.2rem;
+  }
+}
+
+/* for laptop & desktop */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .header__searchButton {
+    padding-right: 1rem;
+  }
+  .header__searchButtonText {
+    font-size: 1rem;
+  }
+  .icon {
+    width: 7rem;
+  }
+  .login_container {
+    /* padding: 0.2rem; */
+  }
+}
+
+/* for large screen */
+@media (max-width: 1281px) {
+  .loginicon {
+    width: 1rem;
+  }
+}

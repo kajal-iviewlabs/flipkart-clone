@@ -1,0 +1,121 @@
+/* Reset some default styles for consistency */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the footer container */
+
+.footer-section-container {
+  display: flex;
+}
+
+.footer-container {
+  background-color: #212121;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+/* Style for the footer sections */
+.footer-section {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.section-name {
+  color: #878787;
+}
+
+/* Style for the links in the footer */
+.footer-link {
+  display: block;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+/* Style for the address in the footer */
+.footer-address {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Style for the images in the footer */
+.footer-image {
+  margin-right: 0.5rem;
+}
+
+/* Style for the copyright section */
+.footer-copyright {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.footer-copyright a {
+  color: #1c41d6;
+  text-decoration: none;
+}
+
+.upper-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.upper-div1 {
+  display: flex;
+}
+
+.div-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.lower-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  margin-left: 7.2rem;
+}
+
+.vertical-line {
+  border: 0.1rem solid #595959;
+  height: 65%;
+  margin: 0 2rem;
+}
+
+.mailUs {
+  margin-left: 23rem;
+}
+
+.regi {
+  margin-left: 6.5rem;
+}
+
+.p-color {
+  color: white;
+  margin-right: 2rem;
+}
+
+.p-color p {
+  margin-bottom: 0.5rem;
+}
+
+.c4gehN {
+  display: flex;
+  align-items: center;
+}
+
+.c4gehN span {
+  color: white;
+}
+
+.hr {
+  border: 0.1rem solid white;
+}

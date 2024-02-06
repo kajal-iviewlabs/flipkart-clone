@@ -1,0 +1,66 @@
+.item {
+  background-color: white;
+  margin: 1rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.img {
+  position: relative;
+  cursor: pointer;
+}
+
+.images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s ease;
+}
+
+.images.active {
+  z-index: 1;
+}
+
+.indicator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  margin-top: 18rem;
+}
+
+.indicator .active {
+  color: blue;
+}
+
+/* for mobile devices */
+@media (max-width: 480px) {
+}
+
+/* for low resolution tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* for tablets & Ipads  */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* for laptop & desktop */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .item {
+    width: 70%;
+    /* max-width: 142.5rem; */
+    height: auto;
+  }
+}
+
+/* for large screen */
+@media (max-width: 1281px) {
+}

@@ -1,0 +1,115 @@
+.electronics_container {
+  display: flex;
+  height: 38rem;
+}
+
+.left-part {
+  height: 100%;
+  width: 79%;
+  margin: 1rem;
+  background-color: white;
+  padding: 0 3rem;
+}
+
+.right-part {
+  width: 19%;
+  height: 100%;
+  background-color: white;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.head h2 {
+  margin-top: 1rem;
+  font-weight:600;
+  font-size: 2rem;
+  color: #212121;
+}
+.head a {
+  margin-top: 1rem;
+}
+
+.title-0 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-family: "inter_regular,fallback-inter_regular,Arial,sans-serif";
+  color: #212121;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+.title-1 {
+  margin: 0;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+  font-size: 1.4rem;
+  letter-spacing: -0.001rem;
+  font-weight: 600;
+  font-family: "inter_semi_bold, fallback-inter_semi_bold, Arial, sans-serif";
+  color: #212121;
+}
+
+._8BoxesContainer {
+  display: flex;
+  overflow: hidden;
+}
+
+.imgSize {
+  width: 20rem;
+  height: 18.5rem;
+  margin: auto;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: contain;
+  opacity: 1;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+.box {
+  width: 20rem;
+  padding: 1em;
+  height: 30rem;
+  text-align: center;
+  border-width: 0.1rem;
+  box-sizing: border-box;
+  margin: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  position: relative;
+  z-index: 0;
+  border-radius: 0.4rem;
+}
+
+.half-box {
+  width: 50%; /* Or any desired width for the half item */
+  float: left;
+}
+
+.boxItem {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
