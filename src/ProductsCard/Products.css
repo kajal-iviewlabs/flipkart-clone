@@ -40,6 +40,53 @@
   color: blue;
 }
 
+.leftpart-card-container0 {
+  height: 75%;
+  display: flex;
+}
+
+.card-product-main-container0 {
+  display: flex;
+  position: relative;
+}
+
+.card-btn0 {
+  position: absolute;
+  padding: 2rem 2rem;
+  height: 10rem;
+  font-size: 2rem;
+  color: #878787;
+  margin: 0 0;
+  background-color: white;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+#card-btn-left0 {
+  /* display: none; */
+  left: -36rem;
+}
+
+#card-btn-right0 {
+  right: -36rem;
+}
+
+.card-btn-container0 {
+  position: relative;
+  width: 0.5rem;
+  margin: auto;
+  top: 6.5rem;
+}
+
+#card-btn-right0 {
+  margin-left: -4rem;
+}
+
+#translate-body0 {
+  overflow: hidden;
+}
+
 /* for mobile devices */
 @media (max-width: 480px) {
 }

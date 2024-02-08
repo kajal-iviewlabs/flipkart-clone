@@ -37,22 +37,6 @@ const ImageComponent = () => {
           srcSet="https://rukminim2.flixcart.com/fk-p-flap/480/40/image/cecebca2292c7948.jpg?q=80 1x, https://rukminim2.flixcart.com/fk-p-flap/960/80/image/cecebca2292c7948.jpg?q=60 2x"
           src="https://rukminim2.flixcart.com/fk-p-flap/480/40/image/cecebca2292c7948.jpg?q=90"
         />
-        <img
-          style={{
-            width: "100%",
-            margin: "auto",
-            display: "block",
-            position: "absolute",
-            inset: 0,
-            padding: "inherit",
-            objectFit: "cover",
-            opacity: 0,
-            aspectRatio: "139 / 12",
-          }}
-          src="https://rukminim2.flixcart.com/fk-p-flap/480/40/image/cecebca2292c7948.jpg?q=20"
-          loading="auto"
-          alt="Image"
-        />
       </picture>
     </div>
   );

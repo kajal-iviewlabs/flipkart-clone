@@ -1,7 +1,5 @@
 import { useState } from "react";
 import "./Electronics.css";
-import { GoArrowRight } from "react-icons/go";
-import { GoArrowLeft } from "react-icons/go";
 
 const Electronics = () => {
   const slidesPerPage = 5.5;
@@ -32,34 +30,52 @@ const Electronics = () => {
   return (
     <div className="electronics_container">
       <div className="left-part">
-        <div className="inside_contain">
-          <div className="head">
-            <h2>Best of Electronics</h2>
-            <a
-              href="https://www.flipkart.com/offers-list/content?screen=dynamic&pk=themeViews%3DDT-OMU-1%3ADealcard~widgetType%3DdealCard~contentType%3Dneo&wid=2.dealCard.OMU"
-              target="_blank"
-              rel="noopener noreferrer"
+        <div className="head">
+          <h2>Best of Electronics</h2>
+          <a
+            href="https://www.flipkart.com/offers-list/content?screen=dynamic&pk=themeViews%3DDT-OMU-1%3ADealcard~widgetType%3DdealCard~contentType%3Dneo&wid=2.dealCard.OMU"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#1c41d6"
+              className="bi bi-arrow-right-circle-fill"
+              viewBox="0 0 16 16"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#1c41d6"
-                className="bi bi-arrow-right-circle-fill"
-                viewBox="0 0 16 16"
+              <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+            </svg>
+          </a>
+        </div>
+        <div className="_8BoxesContainer">
+          <div className="card-product-main-container">
+            <div className="card-btn-container">
+              <button
+                className="card-btn"
+                id="card-btn-left"
+                onClick={prevSlide}
               >
-                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-              </svg>
-            </a>
-          </div>
-          <div className="_8BoxesContainer">{renderBoxes()}</div>
-          {/* leftArrow */}
-          <div className="absolute top-[97%] -translate-x-0 translate-y-[-10%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-            <GoArrowLeft onClick={prevSlide} size={30} />
-          </div>
-          {/* rightArrow */}
-          <div className="absolute top-[97%] right-[24%] translate-y-[-10%] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-            <GoArrowRight onClick={nextSlide} size={30} />
+                <i className="fa-solid fa-angle-left"></i>
+              </button>
+            </div>
+            {renderBoxes()}
+            <div id="translate-body ">
+              <div
+                className="leftpart-card-container"
+                id="card-product-container"
+              ></div>
+            </div>
+            <div className="card-btn-container">
+              <button
+                className="card-btn"
+                id="card-btn-right"
+                onClick={nextSlide}
+              >
+                <i className="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -106,7 +122,7 @@ const slides = [
     image:
       "https://rukminim2.flixcart.com/image/170/170/xif0q/keyboard/gaming-keyboard/b/s/q/f2023-aula-original-imagnhc44uakb4zb.jpeg?q=80",
     alt: "thisimage5",
-    title: "Dell Keyboard",
+    title: " Top Selling Dell Keyboard",
     price: "From ₹229",
   },
   {

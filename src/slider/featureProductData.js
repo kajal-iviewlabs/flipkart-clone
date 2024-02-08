@@ -11,7 +11,7 @@ export const featureProductData = [
     img: "https://rukminim2.flixcart.com/fk-p-flap/64/64/image/f2802fac96dffea9.png?q=100",
     name: "Appliance",
     link: "",
-    subNavigation: false,
+    subNavigation: true,
   },
   {
     id: "3",
@@ -25,14 +25,14 @@ export const featureProductData = [
     img: "https://rukminim2.flixcart.com/fk-p-flap/64/64/image/f925cfe5ecdf6acf.png?q=100",
     name: "Beauty",
     link: "",
-    subNavigation: false,
+    subNavigation: true,
   },
   {
     id: "5",
     img: "https://rukminim2.flixcart.com/fk-p-flap/64/64/image/38d4fbb64c70a3ff.png?q=100",
     name: "Home & Kitchen ",
     link: "",
-    subNavigation: false,
+    subNavigation: true,
   },
   {
     id: "6",
