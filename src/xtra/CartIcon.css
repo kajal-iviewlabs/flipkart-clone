@@ -29,6 +29,11 @@
   font-size: 1.4rem;
   color: #000;
 }
+
+.cartSpan {
+  font-size: medium;
+}
+
 @media (min-width: 1025px) and (max-width: 1280px) {
   ._3RX0a- {
     margin-right: 0.6rem;

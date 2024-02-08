@@ -44,7 +44,7 @@ const ProductCard = () => {
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
-// h-23rem
+  // h-23rem
   return (
     <div className="max-w-[96.7%] h-[10rem] md:max-w-[97.3%] md:h-[13rem] lg:h-[23rem] lg:max-w-[142rem] w-full relative item ">
       {/* images */}
@@ -57,15 +57,27 @@ const ProductCard = () => {
           }`}
         ></div>
       ))}
-      {/* leftArrow */}
-      <div className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-        <GoArrowLeft onClick={prevSlide} size={30} />
+
+      <div className="card-product-main-container0">
+        {/* leftArrow */}
+        <div className="card-btn-container0">
+          <button className="card-btn0" id="card-btn-left0" onClick={prevSlide}>
+            <i className="fa-solid fa-angle-left"></i>
+          </button>
+        </div>
+        {/* rightArrow */}
+
+        <div className="card-btn-container0">
+          <button
+            className="card-btn0"
+            id="card-btn-right0"
+            onClick={nextSlide}
+          >
+            <i className="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
       </div>
-      {/* rightArrow */}
-      <div className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-        <GoArrowRight onClick={nextSlide} size={30} />
-      </div>
-      {/* indicator */}
+
       <div className="flex top-4 justify-center indicator">
         {slides.map((slide, slideIndex) => (
           <div
@@ -86,3 +98,19 @@ const ProductCard = () => {
 };
 
 export default ProductCard;
+
+//  <div className="card-product-main-container">
+//    <div className="card-btn-container">
+//      <button className="card-btn" id="card-btn-left" onClick={prevSlide}>
+//        <i className="fa-solid fa-angle-left"></i>
+//      </button>
+//    </div>
+//    <div id="translate-body ">
+//      <div className="leftpart-card-container" id="card-product-container"></div>
+//    </div>
+//    <div className="card-btn-container">
+//      <button className="card-btn" id="card-btn-right" onClick={nextSlide}>
+//        <i className="fa-solid fa-angle-right"></i>
+//      </button>
+//    </div>
+//  </div>;
